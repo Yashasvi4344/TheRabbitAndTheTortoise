@@ -16,6 +16,7 @@ public class Tortoise implements Runnable {
     @Override
     public void run() {
         for (int index = 0; index < MILESTONES; index++) {
+            switch (index){
             case 0:
                 System.out.println("The Tortoise has started from start line! ");
                 break;
