@@ -9,9 +9,10 @@ public class Tortoise implements Runnable {
         this.tortoise = new Thread(this, "Tortoise");
     }
 
-    public Thread getTortoise(){
-    return tortoise;
-}
+    public Thread getTortoise() {
+        return tortoise;
+    }
+
     @Override
     public void run() {
         for (int index = 0; index < MILESTONES; index++) {
@@ -38,3 +39,13 @@ public class Tortoise implements Runnable {
         }
 
     }
+    JOptionPane.showConfirmDialog(
+            null,
+            "The Tortoise has completed the path!",
+            "Tortoise",
+    JOptionPane.OK_CANCEL_OPTION
+        );
+    }
+
+
+}
